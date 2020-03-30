@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OperatorAddParkingBoysActivity">
+
+    <include
+        android:id="@+id/include7"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include7"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                android:id="@+id/textView119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Squad Parking"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView127"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="142 H Block Sector 2, Noida 201301"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:text="User Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView127" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Prashant Chaudhary"
+                android:textSize="14sp"
+                android:background="@null"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:drawableRight="@drawable/admin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Phone Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="9876543210"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:background="@null"
+                android:drawableRight="@drawable/phone"
+                app:layout_constraintEnd_toEndOf="@+id/editText16"
+                app:layout_constraintStart_toStartOf="@+id/editText16"
+                app:layout_constraintTop_toBottomOf="@+id/textView133" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Password"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView133"
+                app:layout_constraintTop_toBottomOf="@+id/editText17" />
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Prashant Chaudhary"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:background="@null"
+                android:drawableRight="@drawable/password"
+                app:layout_constraintEnd_toEndOf="@+id/editText17"
+                app:layout_constraintStart_toStartOf="@+id/textView134"
+                app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+            <TextView
+                android:id="@+id/txt_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="120dp"
+                android:background="@drawable/bg_const_orange_corner_8dp"
+                android:gravity="center"
+                android:paddingTop="14sp"
+                android:paddingBottom="14sp"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view44"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/view42"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText16"
+                app:layout_constraintStart_toStartOf="@+id/editText16"
+                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+            <View
+                android:id="@+id/view43"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText17"
+                app:layout_constraintStart_toStartOf="@+id/editText17"
+                app:layout_constraintTop_toBottomOf="@+id/editText17" />
+
+            <View
+                android:id="@+id/view44"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText18"
+                app:layout_constraintStart_toStartOf="@+id/editText18"
+                app:layout_constraintTop_toBottomOf="@+id/editText18" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

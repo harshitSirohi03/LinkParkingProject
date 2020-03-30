@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F58929</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorGreyUnderLine">#d3d3d3</color>
+    <color name="colorLightGreen">#DFF8E4</color>
+    <color name="colorDarkGreen">#18A536</color>
+    <color name="colorDarkGrey">#868B98</color>
+    <color name="colorTransparent">#C3050505</color>
+    <color name="colorBlue">#1583FE</color>
+    <color name="colorSkyBlue">#C1D6F2</color>
+    <color name="colorGreyBooking">#F3F3F3</color>
+    <color name="colorRed">#D93535</color>
+    <color name="colorLightOrange">#F8EADF</color>
+
+</resources>
