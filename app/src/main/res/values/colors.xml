@@ -14,5 +14,8 @@
     <color name="colorGreyBooking">#F3F3F3</color>
     <color name="colorRed">#D93535</color>
     <color name="colorLightOrange">#F8EADF</color>
+    <color name="colorLightPink">#FFDEDE</color>
+    <color name="colorGreyShade">#D9EDD7</color>
+    <color name="colorGreen">#3AAE4F</color>
 
 </resources>

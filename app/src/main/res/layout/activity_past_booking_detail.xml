@@ -319,12 +319,14 @@
                     app:layout_constraintEnd_toEndOf="@+id/textView114"
                     app:layout_constraintTop_toBottomOf="@+id/view39" />
 
-                <TextView
+                <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
                     android:id="@+id/textView117"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Rs 50"
+                    android:text="50"
+                    android:drawableLeft="@drawable/rs"
+                    android:drawablePadding="5dp"
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="@+id/textView115"

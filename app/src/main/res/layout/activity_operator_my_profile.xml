@@ -86,7 +86,7 @@
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
                 android:background="@null"
-                android:drawableRight="@drawable/phone"
+                android:drawableRight="@drawable/email"
                 app:layout_constraintEnd_toEndOf="@+id/editText16"
                 app:layout_constraintStart_toStartOf="@+id/editText16"
                 app:layout_constraintTop_toBottomOf="@+id/textView133" />
@@ -153,8 +153,9 @@
 
             <ImageView
                 android:id="@+id/imageView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
                 android:layout_marginTop="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

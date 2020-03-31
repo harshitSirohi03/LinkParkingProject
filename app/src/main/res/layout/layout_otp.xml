@@ -33,7 +33,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+        <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
             android:id="@+id/txt_submit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:paddingBottom="14sp"
             android:text="Submit"
             android:textColor="@android:color/white"
-            android:textSize="14sp"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/editText25"
             app:layout_constraintStart_toStartOf="@+id/editText20"
             app:layout_constraintTop_toBottomOf="@+id/view63" />

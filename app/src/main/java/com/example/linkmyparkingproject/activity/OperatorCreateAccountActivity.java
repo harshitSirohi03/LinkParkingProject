@@ -16,6 +16,8 @@ import butterknife.OnClick;
 public class OperatorCreateAccountActivity extends AppCompatActivity {
     @BindView(R.id.txt_signUp)
     TextView txt_signUp;
+    @BindView(R.id.txt_terms)
+    TextView txt_terms;
 
 
     @Override
@@ -26,12 +28,17 @@ public class OperatorCreateAccountActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.txt_signUp})
+    @OnClick({R.id.txt_signUp,R.id.txt_terms})
     public void onClick( View view){
         switch(view.getId()){
             case R.id.txt_signUp:
                 startActivity(new Intent(OperatorCreateAccountActivity.this,OperatorPersonalIdentificationActivity.class));
                 break;
+
+            case R.id.txt_terms:
+                Intent intent=new Intent(OperatorCreateAccountActivity.this,OperatorAboutAppActivity.class);
+                intent.putExtra("title","createAccount");
+                startActivity(intent);
         }
     }
 }

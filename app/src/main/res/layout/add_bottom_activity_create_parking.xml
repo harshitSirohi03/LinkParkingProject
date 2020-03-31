@@ -51,7 +51,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView11" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
+    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
         android:id="@+id/txt_save"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         android:paddingBottom="14dp"
         android:background="@drawable/bg_const_orange_round_corner"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

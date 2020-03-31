@@ -32,8 +32,9 @@ public class OperatorAboutAppActivity extends AppCompatActivity {
             } else if (getIntent().getStringExtra("title").equals("terms")) {
                 txt_title.setText("Terms and Conditions");
 
-            }
-            else txt_title.setText("");
+            } else if (getIntent().getStringExtra("title").equals("createAccount")) {
+                txt_title.setText("Terms and Conditions");
+            } else txt_title.setText("");
         }
     }
 

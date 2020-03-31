@@ -49,7 +49,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginRight="24dp"
                 android:background="@null"
-                android:drawableRight="@drawable/phone"
+                android:drawableRight="@drawable/email"
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -76,7 +76,9 @@
                 android:layout_marginTop="32dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Enter Your feedback here..."
+                android:hint="Enter Your feedback here..."
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
                 android:padding="10dp"
                 android:textSize="14sp"
                 android:gravity="start"
@@ -85,7 +87,7 @@
                 app:layout_constraintStart_toStartOf="@+id/editText8"
                 app:layout_constraintTop_toBottomOf="@+id/view6" />
 
-            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+            <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
                 android:id="@+id/txt_submit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -97,7 +99,7 @@
                 android:paddingBottom="14dp"
                 android:text="Submit"
                 android:textColor="@android:color/white"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/editText9"
                 app:layout_constraintStart_toStartOf="@+id/editText9"

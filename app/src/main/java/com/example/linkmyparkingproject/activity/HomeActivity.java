@@ -58,10 +58,10 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.const_createParking})
-    public void onClick(View view){
-        switch (view.getId()){
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.const_createParking:
-                startActivity(new Intent(HomeActivity.this,CreateParkingActivity.class));
+                startActivity(new Intent(HomeActivity.this, CreateParkingActivity.class));
                 break;
         }
     }
@@ -97,15 +97,17 @@ public class HomeActivity extends AppCompatActivity {
         txt_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
+
                 startActivity(new Intent(HomeActivity.this, OperatorMyProfileActivity.class));
+
             }
         });
         txt_earning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
-                startActivity(new Intent(HomeActivity.this, TotalEarningsActivity.class));
+                Intent intent = new Intent(HomeActivity.this, TotalEarningsActivity.class);
+                intent.putExtra("topConst", "earnings");
+                startActivity(intent);
 
             }
         });
@@ -113,7 +115,7 @@ public class HomeActivity extends AppCompatActivity {
         txt_adminCommission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
+
                 startActivity(new Intent(HomeActivity.this, OperatorAdminCommissionActivity.class));
 
             }
@@ -121,7 +123,7 @@ public class HomeActivity extends AppCompatActivity {
         txt_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
+
                 startActivity(new Intent(HomeActivity.this, OperatorSettingsActivity.class));
 
             }
@@ -130,9 +132,9 @@ public class HomeActivity extends AppCompatActivity {
         txt_about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
-                Intent intent=new Intent(HomeActivity.this, OperatorAboutAppActivity.class);
-                intent.putExtra("title","about");
+
+                Intent intent = new Intent(HomeActivity.this, OperatorAboutAppActivity.class);
+                intent.putExtra("title", "about");
                 startActivity(intent);
 
             }
@@ -141,7 +143,7 @@ public class HomeActivity extends AppCompatActivity {
         txt_feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
+
                 startActivity(new Intent(HomeActivity.this, OperatorFeedbackActivity.class));
 
 
@@ -151,7 +153,7 @@ public class HomeActivity extends AppCompatActivity {
         txt_identify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
+
                 startActivity(new Intent(HomeActivity.this, OperatorPersonalIdentificationActivity.class));
 
 
@@ -161,7 +163,7 @@ public class HomeActivity extends AppCompatActivity {
         txt_logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.closeDrawer(GravityCompat.START);
+
                 startActivity(new Intent(HomeActivity.this, RoleSelectionActivity.class));
 
 
@@ -171,15 +173,9 @@ public class HomeActivity extends AppCompatActivity {
         img_menuNav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                drawer_layout.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        drawer_layout.closeDrawer(GravityCompat.START);
-                    }
-                });
+                drawer_layout.closeDrawer(GravityCompat.START);
             }
         });
-
 
 
     }

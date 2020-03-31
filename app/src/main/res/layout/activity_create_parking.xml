@@ -18,18 +18,18 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include2"
-        android:fillViewport="true">
+        app:layout_constraintTop_toBottomOf="@+id/include2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <TextView
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
                 android:id="@+id/textView47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,19 +42,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
+            <com.example.linkmyparkingproject.views.EdittextRegularView
                 android:id="@+id/editText11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginRight="24dp"
+                android:background="@null"
+                android:drawableRight="@drawable/user"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="Squad Parking"
+                android:inputType="textPersonName"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:background="@null"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView47"
@@ -150,7 +151,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
                 android:id="@+id/textView48"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -161,21 +162,21 @@
                 app:layout_constraintStart_toStartOf="@+id/textView36"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-            <EditText
+            <com.example.linkmyparkingproject.views.EdittextRegularView
                 android:id="@+id/editText12"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginRight="24dp"
+                android:background="@null"
+                android:drawableRight="@drawable/navi"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="Enter Parking Address"
+                android:inputType="textPersonName"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:background="@null"
                 android:textSize="14sp"
-                android:drawableRight="@drawable/navi"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView48"
                 app:layout_constraintTop_toBottomOf="@+id/textView48" />
@@ -190,12 +191,12 @@
                 app:layout_constraintStart_toStartOf="@+id/editText12"
                 app:layout_constraintTop_toBottomOf="@+id/editText12" />
 
-            <TextView
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
                 android:id="@+id/textView49"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Validity of Parking Address"
+                android:text="Validity of Parking Space"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView48"
@@ -213,28 +214,28 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Organised Parking"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
                     android:button="@drawable/selector_radio_button"
+                    android:paddingLeft="10dp"
                     android:paddingTop="2dp"
                     android:paddingBottom="2dp"
-                    android:paddingLeft="10dp"></RadioButton>
+                    android:text="Organised Parking"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"></RadioButton>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="24dp"
-                    android:text="Open Parking"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp"
                     android:button="@drawable/selector_radio_button"
+                    android:paddingLeft="10dp"
                     android:paddingTop="2dp"
                     android:paddingBottom="2dp"
-                    android:paddingLeft="10dp"></RadioButton>
+                    android:text="Open Parking"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"></RadioButton>
             </RadioGroup>
 
-            <TextView
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
                 android:id="@+id/textView52"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -245,17 +246,17 @@
                 app:layout_constraintStart_toStartOf="@+id/radioGroup2"
                 app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
-            <EditText
+            <com.example.linkmyparkingproject.views.EdittextRegularView
                 android:id="@+id/editText13"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:background="@null"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="Enter Phone Number"
+                android:inputType="textPersonName"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:background="@null"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/editText12"
                 app:layout_constraintStart_toStartOf="@+id/textView52"
@@ -271,17 +272,17 @@
                 app:layout_constraintStart_toStartOf="@+id/editText13"
                 app:layout_constraintTop_toBottomOf="@+id/editText13" />
 
-            <EditText
+            <com.example.linkmyparkingproject.views.EdittextRegularView
                 android:id="@+id/editText14"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="@null"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:hint="Enter Alternate Phone Number"
+                android:inputType="textPersonName"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:background="@null"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/editText13"
                 app:layout_constraintStart_toStartOf="@+id/editText13"
@@ -298,12 +299,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
             <include
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
                 layout="@layout/add_activity_create_parking"
-                app:layout_constraintTop_toBottomOf="@+id/view18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"></include>
+                app:layout_constraintTop_toBottomOf="@+id/view18"></include>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

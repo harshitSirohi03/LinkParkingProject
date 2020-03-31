@@ -25,9 +25,9 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
+        android:padding="5dp"
         android:text="Skip"
         android:textColor="@android:color/black"
-        android:padding="5dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,16 +35,16 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_back"
-        android:fillViewport="true">
+        app:layout_constraintTop_toBottomOf="@+id/img_back">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
                 android:id="@+id/textView32"
@@ -55,7 +55,7 @@
                 android:layout_marginTop="32dp"
                 android:text="Fill Your"
                 android:textColor="@android:color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,8 +65,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Business Identification"
-                android:textSize="16sp"
                 android:textColor="@android:color/black"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/textView32"
                 app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -88,10 +88,10 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Select type of document proof"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
                 android:drawableRight="@drawable/down"
+                android:text="Select type of document proof"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView34"
                 app:layout_constraintTop_toBottomOf="@+id/textView34" />
@@ -201,10 +201,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Select type of document"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
                 android:drawableRight="@drawable/down"
+                android:text="Select type of document"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/textView35"
                 app:layout_constraintStart_toStartOf="@+id/textView38"
                 app:layout_constraintTop_toBottomOf="@+id/textView38" />
@@ -224,11 +224,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Upload Certification of allotment of arking"
+                android:text="Upload Certification of allotment of parking"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView39"
                 app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout4"
                 android:layout_width="100dp"
@@ -297,7 +298,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+            <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
                 android:id="@+id/txt_submit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -311,7 +312,7 @@
                 android:paddingBottom="14dp"
                 android:text="Submit"
                 android:textColor="@android:color/white"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
@@ -336,12 +337,12 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginRight="24dp"
+                android:background="@null"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Enter Name of the Firm"
-                android:textSize="14sp"
                 android:textColor="@android:color/black"
-                android:background="@null"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView45"
                 app:layout_constraintTop_toBottomOf="@+id/textView45" />
@@ -350,6 +351,8 @@
                 android:id="@+id/view14"
                 android:layout_width="0dp"
                 android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
                 app:layout_constraintEnd_toEndOf="@+id/editText10"
                 app:layout_constraintStart_toStartOf="@+id/editText10"
                 app:layout_constraintTop_toBottomOf="@+id/editText10" />
