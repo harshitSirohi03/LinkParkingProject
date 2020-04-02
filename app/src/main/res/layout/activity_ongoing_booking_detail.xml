@@ -74,9 +74,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
-                    android:text="25365D56DF"
+                    android:text=" 25365D56DF"
                     android:textColor="@color/colorDarkGrey"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textView98"
                     app:layout_constraintStart_toEndOf="@+id/textView98" />
 
@@ -127,7 +127,7 @@
                     android:layout_marginTop="4dp"
                     android:text="Bike"
                     android:textColor="@color/colorDarkGrey"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/textView101"
                     app:layout_constraintTop_toBottomOf="@+id/textView101" />
 
@@ -149,7 +149,7 @@
                     android:layout_marginTop="4dp"
                     android:text="UP 85 AV 1118"
                     android:textColor="@color/colorDarkGrey"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/textView103"
                     app:layout_constraintTop_toBottomOf="@+id/textView103" />
 
@@ -172,7 +172,7 @@
                     android:layout_marginBottom="24dp"
                     android:text="09/01/2020"
                     android:textColor="@color/colorDarkGrey"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView105"
                     app:layout_constraintTop_toBottomOf="@+id/textView105"
@@ -183,22 +183,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mobile No."
-                    android:textSize="14sp"
                     android:textColor="@android:color/black"
+                    android:textSize="14sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textView101"
-                    app:layout_constraintEnd_toEndOf="@+id/textView100" />
+                    app:layout_constraintStart_toStartOf="@+id/textView108" />
 
                 <TextView
                     android:id="@+id/textView108"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="987654321"
-                    android:textColor="@color/colorDarkGrey"
-                    android:textSize="12sp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
                     android:drawableRight="@drawable/edit"
                     android:drawablePadding="5dp"
+                    android:text="987654321"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textView102"
-                    app:layout_constraintStart_toStartOf="@+id/textView107" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
                     android:id="@+id/textView109"
@@ -216,7 +218,7 @@
                     android:layout_height="wrap_content"
                     android:text="1 hr 24min"
                     android:textColor="@color/colorRed"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textView104"
                     app:layout_constraintStart_toStartOf="@+id/textView109" />
 
@@ -236,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:text="11:00 AM"
                     android:textColor="@color/colorDarkGrey"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textView106"
                     app:layout_constraintStart_toStartOf="@+id/textView111" />
             </androidx.constraintlayout.widget.ConstraintLayout>

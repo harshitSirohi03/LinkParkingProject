@@ -15,6 +15,8 @@ import butterknife.ButterKnife;
 public class RoleSelectionActivity extends AppCompatActivity {
     @BindView(R.id.img_operator)
     ImageView img_operator;
+    @BindView(R.id.img_parkingBoy)
+    ImageView img_parkingBoy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,14 @@ public class RoleSelectionActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RoleSelectionActivity.this, OperatorLoginActivity.class));
+            }
+        });
+
+        img_parkingBoy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RoleSelectionActivity.this, BoyHomeActivity.class));
+
             }
         });
     }

@@ -251,6 +251,15 @@
                         app:layout_constraintStart_toEndOf="@+id/textView85"
                         app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
+                    <View
+                        android:id="@+id/view67"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:background="#BEBEE5"
+                        app:layout_constraintEnd_toEndOf="@+id/textView81"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <View

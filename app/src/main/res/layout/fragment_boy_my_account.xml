@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/txt_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/profile"
+                android:drawablePadding="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="My profile"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/img_rightArrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_rightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/right_a"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_profile" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const_profileInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_const_stroke_grey_round"
+                android:elevation="3dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_profile">
+
+                <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                    android:id="@+id/textView184"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text="User Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                    android:id="@+id/textView187"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Amit Verma"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView184"
+                    app:layout_constraintTop_toBottomOf="@+id/textView184" />
+
+                <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                    android:id="@+id/textView188"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Password"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView184"
+                    app:layout_constraintTop_toBottomOf="@+id/textView187" />
+
+                <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                    android:id="@+id/textView189"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="Amit@Verma123"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView188"
+                    app:layout_constraintTop_toBottomOf="@+id/textView188"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                    android:id="@+id/textView190"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Phone Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView184"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                    android:id="@+id/textView191"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="9876543210"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView190"
+                    app:layout_constraintTop_toBottomOf="@+id/textView190" />
+
+                <TextView
+                    android:id="@+id/textView192"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Parking Boy)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView187"
+                    app:layout_constraintStart_toEndOf="@+id/textView187" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view78"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/const_profileInfo" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView193"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:drawableLeft="@drawable/about_app"
+                android:drawablePadding="10dp"
+                android:text="About this App"
+                android:drawableRight="@drawable/right_a"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view78" />
+
+            <View
+                android:id="@+id/view79"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView193"
+                app:layout_constraintStart_toStartOf="@+id/textView193"
+                app:layout_constraintTop_toBottomOf="@+id/textView193" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView194"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/terms"
+                android:drawablePadding="10dp"
+                android:text="Terms &amp; Conditions"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/right_a"
+                app:layout_constraintEnd_toEndOf="@+id/textView193"
+                app:layout_constraintStart_toStartOf="@+id/textView193"
+                app:layout_constraintTop_toBottomOf="@+id/view79" />
+
+            <View
+                android:id="@+id/view80"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView194"
+                app:layout_constraintStart_toStartOf="@+id/textView194"
+                app:layout_constraintTop_toBottomOf="@+id/textView194" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView195"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/logoutb"
+                android:drawablePadding="12dp"
+                android:text="Logout"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableRight="@drawable/right_a"
+                app:layout_constraintEnd_toEndOf="@+id/textView194"
+                app:layout_constraintStart_toStartOf="@+id/textView194"
+                app:layout_constraintTop_toBottomOf="@+id/view80" />
+
+            <View
+                android:id="@+id/view81"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView195"
+                app:layout_constraintStart_toStartOf="@+id/textView195"
+                app:layout_constraintTop_toBottomOf="@+id/textView195" />
+
+            <ImageView
+                android:id="@+id/img_downArrrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/d_down"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_profile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

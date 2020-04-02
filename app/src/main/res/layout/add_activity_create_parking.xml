@@ -177,7 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Start Days"
+        android:text="Select Days"
         android:textColor="@color/colorPrimary"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView59"

@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Booking"
-        android:id="@+id/home"
+        android:id="@+id/booking"
         android:icon="@drawable/booking_drawable_selector" />
 
     <item android:title="Create Booking"
-        android:id="@+id/eventList"
+        android:id="@+id/createBook"
         android:icon="@drawable/create_booking_drawable_selector"/>
 
     <item android:title="My Account"
-        android:id="@+id/live_offers"
+        android:id="@+id/account"
         android:icon="@drawable/account_drawable_selector" />
 
 

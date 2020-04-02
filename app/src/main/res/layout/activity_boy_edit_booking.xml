@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BoyEditBookingActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView167"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:text="Enter Vehicle Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.linkmyparkingproject.views.EdittextRegularView
+                android:id="@+id/editText28"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="UP 85 AV 1118"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                android:background="@null"
+                android:drawableRight="@drawable/scan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/textView167" />
+
+            <TextView
+                android:id="@+id/textView168"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Phone Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/view74" />
+
+            <com.example.linkmyparkingproject.views.EdittextRegularView
+                android:id="@+id/editText29"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="9876543210"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                android:background="@null"
+                android:drawableRight="@drawable/phone"
+                app:layout_constraintEnd_toEndOf="@+id/editText28"
+                app:layout_constraintStart_toStartOf="@+id/editText28"
+                app:layout_constraintTop_toBottomOf="@+id/textView168" />
+
+            <TextView
+                android:id="@+id/textView170"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Start Time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView186"
+                app:layout_constraintTop_toBottomOf="@+id/view77" />
+
+            <EditText
+                android:id="@+id/editText30"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="03:20 PM"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                android:background="@null"
+                android:drawableRight="@drawable/time"
+                app:layout_constraintEnd_toEndOf="@+id/editText29"
+                app:layout_constraintStart_toStartOf="@+id/editText29"
+                app:layout_constraintTop_toBottomOf="@+id/textView170" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                android:id="@+id/txt_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/bg_const_orange_corner_8dp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/editText30"
+                app:layout_constraintStart_toStartOf="@+id/editText30"
+                app:layout_constraintTop_toBottomOf="@+id/view76"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/view74"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText28"
+                app:layout_constraintStart_toStartOf="@+id/editText28"
+                app:layout_constraintTop_toBottomOf="@+id/editText28" />
+
+            <View
+                android:id="@+id/view75"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText29"
+                app:layout_constraintStart_toStartOf="@+id/editText29"
+                app:layout_constraintTop_toBottomOf="@+id/editText29" />
+
+            <View
+                android:id="@+id/view76"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText30"
+                app:layout_constraintStart_toStartOf="@+id/editText30"
+                app:layout_constraintTop_toBottomOf="@+id/editText30" />
+
+            <TextView
+                android:id="@+id/textView186"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Start Time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView168"
+                app:layout_constraintTop_toBottomOf="@+id/view75" />
+
+            <TextView
+                android:id="@+id/editText31"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Bike"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                android:background="@null"
+                android:gravity="center|start"
+                android:drawableRight="@drawable/down"
+                android:drawableLeft="@drawable/bike"
+                android:drawablePadding="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/editText29"
+                app:layout_constraintStart_toStartOf="@+id/editText29"
+                app:layout_constraintTop_toBottomOf="@+id/textView186" />
+
+            <View
+                android:id="@+id/view77"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="@+id/editText31"
+                app:layout_constraintStart_toStartOf="@+id/editText31"
+                app:layout_constraintTop_toBottomOf="@+id/editText31" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,532 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Parking Status : "
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
+            app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/full" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Squad Parking"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                android:id="@+id/textView149"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="142 H Block Sector 2,Noida 201301"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView149">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout7"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView85"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_booked_space"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/view34"
+                        app:layout_constraintEnd_toStartOf="@+id/textView86"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textView84"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view34"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:background="#BEBEE5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView81"
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:background="@color/colorSkyBlue"
+                        android:gravity="center"
+                        android:text="Booked Space"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/view34"
+                        app:layout_constraintEnd_toStartOf="@+id/textView82"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView82"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_booked_space"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/view34"
+                        app:layout_constraintEnd_toStartOf="@+id/textView83"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textView81"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView83"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_booked_space"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/view34"
+                        app:layout_constraintEnd_toStartOf="@+id/textView84"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textView82"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView84"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_booked_space"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/view34"
+                        app:layout_constraintEnd_toStartOf="@+id/textView85"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textView83"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView86"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_booked_space"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/view34"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/textView85"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView87"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/colorSkyBlue"
+                        android:gravity="center"
+                        android:text="Available Space"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView81"
+                        app:layout_constraintStart_toStartOf="@+id/textView81"
+                        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView88"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_available_space"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView82"
+                        app:layout_constraintStart_toEndOf="@+id/textView81"
+                        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView89"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_available_space"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView83"
+                        app:layout_constraintStart_toEndOf="@+id/textView82"
+                        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView90"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_available_space"
+                        android:gravity="center"
+                        android:text="14"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView85"
+                        app:layout_constraintStart_toEndOf="@+id/textView83"
+                        app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView91"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_available_space"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView85"
+                        app:layout_constraintStart_toStartOf="@+id/textView85"
+                        app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+                    <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                        android:id="@+id/textView92"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_const_available_space"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView86"
+                        app:layout_constraintStart_toEndOf="@+id/textView85"
+                        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view36"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:background="@color/colorSkyBlue"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView16"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bike"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView17"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/view36"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/auto"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView18"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView16"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/car"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView19"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView17"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bus"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView18"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/truck"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView19"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_const_today_cash"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout8"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout8"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+                <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                    android:id="@+id/textView152"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs1500"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView150"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView150" />
+
+                <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
+                    android:id="@+id/textView150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="Today's Cash Collected  "
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView152"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view68"
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorGreyUnderLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout12" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const_onGoing"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_const_orange_2corner"
+                app:layout_constraintEnd_toStartOf="@+id/const_past"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView155">
+
+                <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                    android:id="@+id/txt_onGoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ongoing"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const_past"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_const_grey_2corner"
+                app:layout_constraintBottom_toBottomOf="@+id/const_onGoing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/const_onGoing"
+                app:layout_constraintTop_toTopOf="@+id/const_onGoing">
+
+                <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                    android:id="@+id/txt_past"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Past"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.example.linkmyparkingproject.views.EdittextRegularView
+                android:id="@+id/editText15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_const_grey_4corner"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="Search"
+                android:textColor="@color/colorDarkGrey"
+                android:textColorHint="@color/colorDarkGrey"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/search_icn"
+                android:drawablePadding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/const_past"
+                app:layout_constraintStart_toStartOf="@+id/const_onGoing"
+                app:layout_constraintTop_toBottomOf="@+id/const_onGoing" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/editText15"
+                app:layout_constraintEnd_toEndOf="@+id/const_past"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/editText15"
+                app:layout_constraintTop_toTopOf="@+id/editText15"
+                app:srcCompat="@drawable/scan" />
+
+            <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
+                android:id="@+id/textView155"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Bookings"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view68" />
+
+            <FrameLayout
+                android:id="@+id/booking_framelayout"
+                android:layout_width="0dp"
+                android:layout_height="500dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText15"
+                app:layout_constraintVertical_bias="0.0">
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
