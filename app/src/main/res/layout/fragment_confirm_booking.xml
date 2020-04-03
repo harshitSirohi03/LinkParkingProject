@@ -144,14 +144,14 @@
                 android:gravity="center"
                 android:paddingTop="14dp"
                 android:paddingBottom="14dp"
-                app:layout_constraintEnd_toStartOf="@+id/textView185"
+                app:layout_constraintEnd_toStartOf="@+id/txt_confirm"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="@+id/constraintLayout13"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout13" />
 
             <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
-                android:id="@+id/textView185"
+                android:id="@+id/txt_confirm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

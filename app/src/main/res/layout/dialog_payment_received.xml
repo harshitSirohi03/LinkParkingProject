@@ -49,7 +49,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
-            android:id="@+id/textView159"
+            android:id="@+id/txt_received"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payment Recieved"

@@ -165,7 +165,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/const_profileInfo" />
 
             <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
-                android:id="@+id/textView193"
+                android:id="@+id/txt_about"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -191,12 +191,12 @@
                 android:layout_height="0.5dp"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorGreyUnderLine"
-                app:layout_constraintEnd_toEndOf="@+id/textView193"
-                app:layout_constraintStart_toStartOf="@+id/textView193"
-                app:layout_constraintTop_toBottomOf="@+id/textView193" />
+                app:layout_constraintEnd_toEndOf="@+id/txt_about"
+                app:layout_constraintStart_toStartOf="@+id/txt_about"
+                app:layout_constraintTop_toBottomOf="@+id/txt_about" />
 
             <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
-                android:id="@+id/textView194"
+                android:id="@+id/txt_terms"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -208,8 +208,8 @@
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:drawableRight="@drawable/right_a"
-                app:layout_constraintEnd_toEndOf="@+id/textView193"
-                app:layout_constraintStart_toStartOf="@+id/textView193"
+                app:layout_constraintEnd_toEndOf="@+id/txt_about"
+                app:layout_constraintStart_toStartOf="@+id/txt_about"
                 app:layout_constraintTop_toBottomOf="@+id/view79" />
 
             <View
@@ -218,12 +218,12 @@
                 android:layout_height="0.5dp"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorGreyUnderLine"
-                app:layout_constraintEnd_toEndOf="@+id/textView194"
-                app:layout_constraintStart_toStartOf="@+id/textView194"
-                app:layout_constraintTop_toBottomOf="@+id/textView194" />
+                app:layout_constraintEnd_toEndOf="@+id/txt_terms"
+                app:layout_constraintStart_toStartOf="@+id/txt_terms"
+                app:layout_constraintTop_toBottomOf="@+id/txt_terms" />
 
             <com.example.linkmyparkingproject.views.SourceSansProRegularTextView
-                android:id="@+id/textView195"
+                android:id="@+id/txt_logout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -235,8 +235,8 @@
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:drawableRight="@drawable/right_a"
-                app:layout_constraintEnd_toEndOf="@+id/textView194"
-                app:layout_constraintStart_toStartOf="@+id/textView194"
+                app:layout_constraintEnd_toEndOf="@+id/txt_terms"
+                app:layout_constraintStart_toStartOf="@+id/txt_terms"
                 app:layout_constraintTop_toBottomOf="@+id/view80" />
 
             <View
@@ -245,9 +245,9 @@
                 android:layout_height="0.5dp"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorGreyUnderLine"
-                app:layout_constraintEnd_toEndOf="@+id/textView195"
-                app:layout_constraintStart_toStartOf="@+id/textView195"
-                app:layout_constraintTop_toBottomOf="@+id/textView195" />
+                app:layout_constraintEnd_toEndOf="@+id/txt_logout"
+                app:layout_constraintStart_toStartOf="@+id/txt_logout"
+                app:layout_constraintTop_toBottomOf="@+id/txt_logout" />
 
             <ImageView
                 android:id="@+id/img_downArrrow"

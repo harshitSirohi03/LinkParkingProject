@@ -26,14 +26,21 @@ public class RoleSelectionActivity extends AppCompatActivity {
         img_operator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RoleSelectionActivity.this, OperatorLoginActivity.class));
+               // startActivity(new Intent(RoleSelectionActivity.this, OperatorLoginActivity.class));
+                Intent intent =new Intent(RoleSelectionActivity.this,OperatorLoginActivity.class);
+                intent.putExtra("activity","operator");
+                startActivity(intent);
             }
         });
 
         img_parkingBoy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RoleSelectionActivity.this, BoyHomeActivity.class));
+
+                Intent intent=new Intent(RoleSelectionActivity.this,OperatorLoginActivity.class);
+                intent.putExtra("activity","boy");
+                startActivity(intent);
+//                startActivity(new Intent(RoleSelectionActivity.this, BoyHomeActivity.class));
 
             }
         });

@@ -24,6 +24,8 @@ public class ConfirmBookingFragment extends Fragment {
 
     @BindView(R.id.txt_edit)
     TextView txt_edit;
+    @BindView(R.id.txt_confirm)
+    TextView txt_confirm;
 
     public ConfirmBookingFragment() {
         // Required empty public constructor
@@ -40,11 +42,16 @@ public class ConfirmBookingFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.txt_edit})
+    @OnClick({R.id.txt_edit,R.id.txt_confirm})
     public void onClick(View view){
         switch(view.getId()){
             case R.id.txt_edit:
                 startActivity(new Intent(getActivity(), BoyEditBookingActivity.class));
+                break;
+
+            case R.id.txt_confirm:
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.home_frameLayout, new OngoingBookingDetailFragment(), null).addToBackStack(null).commit();
+
                 break;
         }
     }

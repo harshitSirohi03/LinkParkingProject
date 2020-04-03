@@ -44,7 +44,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="Enter Text..."
-            android:background="@drawable/bg_const_grey_round_corner"
+            android:background="@drawable/bg_const_grey_corner8dp"
             android:textColor="@color/colorDarkGrey"
             android:gravity="start"
             android:paddingLeft="10dp"
@@ -71,7 +71,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
-            android:id="@+id/textView166"
+            android:id="@+id/txt_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send"

@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.example.linkmyparkingproject.views.SourceSansProBoldTextView
+        <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
             android:id="@+id/textView16"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -50,28 +50,28 @@
 
         <RadioGroup
             android:id="@+id/radioGroup"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@+id/textView16"
-            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16">
 
             <RadioButton
+                android:id="@+id/radio_cash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@drawable/selector_radio_button"
                 android:paddingLeft="16dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="Cash"></RadioButton>
+                android:text="Cash"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"></RadioButton>
 
             <RadioButton
+                android:id="@+id/radio_paytm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
@@ -84,7 +84,7 @@
         </RadioGroup>
 
         <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
-            android:id="@+id/textView158"
+            android:id="@+id/txt_proceed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Proceed"

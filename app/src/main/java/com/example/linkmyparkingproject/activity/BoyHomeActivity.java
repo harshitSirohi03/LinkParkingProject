@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.linkmyparkingproject.R;
+import com.example.linkmyparkingproject.adapter.BoyOngoingBookingAdapter;
 import com.example.linkmyparkingproject.fragment.BoyCreateBookingFragment;
 import com.example.linkmyparkingproject.fragment.BoyHomeFragmentFragment;
 import com.example.linkmyparkingproject.fragment.BoyMyAccountFragment;
@@ -27,9 +28,9 @@ public class BoyHomeActivity extends AppCompatActivity {
     @BindView(R.id.bottomNavigationView2)
     BottomNavigationView bottomNavigationView2;
     @BindView(R.id.txt_titleBoy)
-    TextView txt_titleBoy;
+    public TextView txt_titleBoy;
     @BindView(R.id.img_header)
-    ImageView img_header;
+    public ImageView img_header;
 
     View Home;
 
@@ -81,5 +82,6 @@ public class BoyHomeActivity extends AppCompatActivity {
             return true;
         }
     };
+
 
 }

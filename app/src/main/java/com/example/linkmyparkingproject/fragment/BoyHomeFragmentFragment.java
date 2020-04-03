@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.example.linkmyparkingproject.R;
+import com.example.linkmyparkingproject.activity.BoyHomeActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,6 +35,7 @@ public class BoyHomeFragmentFragment extends Fragment {
     @BindView(R.id.booking_framelayout)
     FrameLayout booking_framelayout;
 
+
     public BoyHomeFragmentFragment() {
         // Required empty public constructor
     }
@@ -42,6 +44,11 @@ public class BoyHomeFragmentFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        BoyHomeActivity home=(BoyHomeActivity) getActivity();
+        home.img_header.setVisibility(View.VISIBLE);
+        home.txt_titleBoy.setVisibility(View.GONE);
+     //   home.txt_titleBoy.setText("Booking Details");
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_boy_home_fragment, container, false);
         ButterKnife.bind(this, view);

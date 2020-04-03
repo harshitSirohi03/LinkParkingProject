@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view69" />
 
         <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
-            android:id="@+id/textView156"
+            android:id="@+id/txt_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -72,7 +72,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view69" />
 
         <com.example.linkmyparkingproject.views.SourceSansProSemiboldTextView
-            android:id="@+id/textView157"
+            android:id="@+id/txt_yes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
